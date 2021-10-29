@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using AnimalShelter.Models;
 using System;
 using System.Linq;
+using System.Data.SqlClient;
+
 
 namespace AnimalShelter.Controllers
 {
@@ -19,6 +21,21 @@ namespace AnimalShelter.Controllers
     {
       _db = db;
     }
+[HttpGet]
+public IActionResult GetAnimals()
+{
+    IEnumerable<Animal> animals = null;
+
+    using (SqlConnection connection = new SqlConnection(_connectionString))
+    {
+        connection.Open();
+
+        animals = connection.Query<Animal>(@"SELECT AnimalId, AnimalName, Animal");
+    }
+
+    return Ok(animals);
+}
+
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Animal>>> Get()
