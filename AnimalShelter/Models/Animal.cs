@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace AnimalShelter.Models
 {
   public class Animal
@@ -8,6 +6,5 @@ namespace AnimalShelter.Models
     public string AnimalName { get; set; }
     public string AnimalType { get; set; }
     public int AnimalAge { get; set; }
-    public string AnimalBreed { get; set; }
   }
 }
