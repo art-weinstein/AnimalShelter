@@ -20,6 +20,13 @@ namespace AnimalShelter
 
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddApiVersioning(o => {
+            o.ReportApiVersions = true;
+            o.AssumeDefaultVersionWhenUnspecified = true;
+            o.DefaultApiVersion = new ApiVersion(1, 0);
+            });
+
             services.AddDbContext<AnimalShelterContext>(opt =>
             opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
             services.AddControllers();

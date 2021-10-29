@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "O3ZDAOYPnFR24p7vFuj+e27H0ZnEYeOZRQ4DXnPajHaRKi2zGmn2vvABDZLdbFqT7/7YCl+skJCvP/VGApzanQ==",
+  "dgSpecHash": "ukvSYNzeKxtju2EzFsinhTjXWFyQGLAtJ+eADhQwqpFlCQ+uzNAahhS2VgD6v5S32PtnEwh5IbWbmH7LtEAkgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Art Weinstein\\Desktop\\AnimalShelter.Solution\\AnimalShelter\\AnimalShelter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Art Weinstein\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Art Weinstein\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\Art Weinstein\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Art Weinstein\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\Art Weinstein\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
